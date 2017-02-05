@@ -18,14 +18,6 @@ RSpec.describe Day, type: :model do
           expect(day.valid?).to be(false)
         end
       end
-
-      context 'with a valid date' do
-        let(:day) { build(:day) }
-
-        it 'should be valid' do
-          expect(day.valid?).to be(true)
-        end
-      end
     end
 
     describe 'uniqueness validation' do
@@ -38,14 +30,6 @@ RSpec.describe Day, type: :model do
 
         it 'should be invalid' do
           expect(day.valid?).to be(false)
-        end
-      end
-
-      context 'with a day with a new date' do
-        let(:day) { build(:day, :today) }
-
-        it 'should be valid' do
-          expect(day.valid?).to be(true)
         end
       end
     end

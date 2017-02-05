@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170205200121) do
+ActiveRecord::Schema.define(version: 20170205203718) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -22,4 +22,15 @@ ActiveRecord::Schema.define(version: 20170205200121) do
     t.index ["date"], name: "index_days_on_date", unique: true, using: :btree
   end
 
+  create_table "events", force: :cascade do |t|
+    t.string   "title",      null: false
+    t.text     "summary",    null: false
+    t.string   "image_url"
+    t.integer  "day_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["day_id"], name: "index_events_on_day_id", using: :btree
+  end
+
+  add_foreign_key "events", "days"
 end

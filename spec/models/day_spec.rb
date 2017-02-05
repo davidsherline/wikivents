@@ -1,8 +1,8 @@
 require 'rails_helper'
 
 RSpec.describe Day, type: :model do
-  context 'validation' do
-    context 'presence' do
+  describe '#day' do
+    describe 'presence validation' do
       context 'with a nil date' do
         let(:day) { build(:day, date: nil) }
 
@@ -28,7 +28,7 @@ RSpec.describe Day, type: :model do
       end
     end
 
-    context 'uniqueness' do
+    describe 'uniqueness validation' do
       before(:each) do
         create(:day)
       end

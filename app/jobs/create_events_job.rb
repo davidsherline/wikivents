@@ -10,6 +10,6 @@ class CreateEventsJob < ApplicationJob
   private
 
   def date_invalid?(date)
-    Day.exists?(date: date) || date >= Date.current
+    Day.exists?(date: date) || date.to_date >= Date.current
   end
 end

@@ -17,5 +17,3 @@ $(document).on "ajaxStop", ->
 datepickerOptions =
   autoclose: true
   format: "yyyy-mm-dd"
-  todayBtn: true
-  todayHighlight: true

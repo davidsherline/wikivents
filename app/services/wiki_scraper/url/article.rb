@@ -1,10 +1,14 @@
 module WikiScraper
   module URL
     class Article
-      attr_reader :url
+      BASE_URL = 'https://en.wikipedia.org'.freeze
 
-      def initialize(url)
-        @url = url
+      def initialize(path)
+        @path = path
+      end
+
+      def url
+        BASE_URL + @path
       end
     end
   end

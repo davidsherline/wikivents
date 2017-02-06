@@ -2,8 +2,8 @@ FactoryGirl.define do
   factory :article_url, class: WikiScraper::URL::Article do
     skip_create
 
-    url { Faker::Internet.url('en.wikipedia.org') }
+    path { "/#{Faker::Internet.domain_word}/#{Faker::Internet.domain_word}" }
 
-    initialize_with { new(url) }
+    initialize_with { new(path) }
   end
 end

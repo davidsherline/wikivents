@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 RSpec.describe WikiScraper::PageImporter do
-  describe '#page' do
+  describe '#page', :vcr do
     let(:page_importer) { build(:page_importer) }
 
     before(:each) do

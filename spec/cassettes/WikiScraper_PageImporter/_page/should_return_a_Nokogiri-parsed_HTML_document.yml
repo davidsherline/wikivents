@@ -1,0 +1,65 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://en.wikipedia.org/boscocorkery/feil
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Date:
+      - Mon, 06 Feb 2017 16:50:01 GMT
+      Content-Type:
+      - text/html; charset=utf-8
+      Content-Length:
+      - '1001'
+      Connection:
+      - keep-alive
+      Server:
+      - mw1209.eqiad.wmnet
+      X-Powered-By:
+      - HHVM/3.12.7
+      Cache-Control:
+      - s-maxage=2678400, max-age=2678400
+      Backend-Timing:
+      - D=1343 t=1486399801116296
+      Vary:
+      - Accept-Encoding
+      X-Varnish:
+      - 342794464, 1040696150, 26627389
+      Via:
+      - 1.1 varnish-v4, 1.1 varnish-v4, 1.1 varnish-v4
+      Age:
+      - '0'
+      X-Cache:
+      - cp1053 miss, cp2010 miss, cp2007 miss
+      X-Cache-Status:
+      - miss
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+      Set-Cookie:
+      - GeoIP=US:TX:Round_Rock:30.52:-97.63:v4; Path=/; secure; Domain=.wikipedia.org
+      - WMF-Last-Access=06-Feb-2017;Path=/;HttpOnly;secure;Expires=Fri, 10 Mar 2017
+        12:00:00 GMT
+      X-Analytics:
+      - https=1;nocookies=1
+      X-Client-Ip:
+      - 97.105.179.83
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        PCFET0NUWVBFIGh0bWw+CjxodG1sPgoJPGhlYWQ+CgkJPG1ldGEgaHR0cC1lcXVpdj0iQ29udGVudC1UeXBlIiBjb250ZW50PSJ0ZXh0L2h0bWw7IGNoYXJzZXQ9VVRGLTgiPgoJCTx0aXRsZT5XaWtpbWVkaWEgcGFnZSBub3QgZm91bmQ6IGh0dHBzOi8vZW4ud2lraXBlZGlhLm9yZy9ib3Njb2NvcmtlcnkvZmVpbDwvdGl0bGU+CgkJCTxsaW5rIHJlbD0ic2hvcnRjdXQgaWNvbiIgaHJlZj0iL2Zhdmljb24uaWNvIj4KCQkJPHN0eWxlPgoJCQkJYm9keSB7CgkJCQkJYmFja2dyb3VuZC1pbWFnZTogdXJsKCcvL3VwbG9hZC53aWtpbWVkaWEub3JnL3dpa2lwZWRpYS9jb21tb25zLzkvOTYvRXJyb3JiZy5wbmcnKTsKCQkJCQliYWNrZ3JvdW5kLXJlcGVhdDogcmVwZWF0LXg7CgkJCQkJYmFja2dyb3VuZC1jb2xvcjogd2hpdGU7CgkJCQkJaGVpZ2h0OiAxMDAlOwoJCQkJCW1hcmdpbjogMDsKCQkJCQlwYWRkaW5nOiAwOwoJCQkJCWZvbnQtZmFtaWx5OiAnR2lsbCBTYW5zIE1UJywgJ0dpbGwgU2FucycsIHNhbnMtc2VyaWY7CgkJCQkJY29sb3I6ICM0ODQ4NDg7CgkJCQl9CgkJCQlhOmxpbmssIGE6dmlzaXRlZCB7CgkJCQkJY29sb3I6ICMwMDViOTA7CgkJCQl9CgkJCQlhOmhvdmVyLCBhOmFjdGl2ZSB7CgkJCQkJY29sb3I6ICM5MDAwMDA7CgkJCQl9CgkJCQloMSB7CgkJCQkJY29sb3I6IGJsYWNrOwoJCQkJCW1hcmdpbjogMHB4OwoJCQkJfQoJCQkJaDIgewoJCQkJCWNvbG9yOiAjNDg0ODQ4OwoJCQkJCXBhZGRpbmc6IDBweDsKCQkJCQltYXJnaW46IDBweDsKCQkJCX0KCQkJCXAgewoJCQkJCW1hcmdpbi10b3A6IDEwcHg7CgkJCQkJbWFyZ2luLWJvdHRvbTogMHB4OwoJCQkJCXBhZGRpbmctYm90dG9tOiAwLjVlbTsKCQkJCX0KCQkJCSNjZW50ZXIgewoJCQkJCXBvc2l0aW9uOiBhYnNvbHV0ZTsKCQkJCQl0b3A6IDUwJTsKCQkJCQl3aWR0aDogMTAwJTsKCQkJCQloZWlnaHQ6IDFweDsKCQkJCQlvdmVyZmxvdzogdmlzaWJsZTsKCQkJCX0KCQkJCSNtYWluIHsKCQkJCQlwb3NpdGlvbjogYWJzb2x1dGU7CgkJCQkJbGVmdDogNTAlOwoJCQkJCXdpZHRoOiA3MjBweDsKCQkJCQltYXJnaW4tbGVmdDogLTM2MHB4OwoJCQkJCWhlaWdodDogMzQwcHg7CgkJCQkJdG9wOiAtMTcwcHgKCQkJCX0KCQkJCSNsb2dvIHsKCQkJCQlkaXNwbGF5OiBibG9jazsKCQkJCQlmbG9hdDogbGVmdDsKCQkJCQliYWNrZ3JvdW5kLWltYWdlOiB1cmwoJy8vdXBsb2FkLndpa2ltZWRpYS5vcmcvd2lraXBlZGlhL2NvbW1vbnMvdGh1bWIvOC84MS9XaWtpbWVkaWEtbG9nby5zdmcvMzAwcHgtV2lraW1lZGlhLWxvZ28uc3ZnLnBuZycpOwoJCQkJCWJhY2tncm91bmQtcG9zaXRpb246IHRvcCBjZW50ZXI7CgkJCQkJYmFja2dyb3VuZC1yZXBlYXQ6IG5vLXJlcGVhdDsKCQkJCQloZWlnaHQ6IDM0MHB4OwoJCQkJCXdpZHRoOiAzMDBweDsKCQkJCX0KCQkJCSNkaXZpZGVyIHsKCQkJCQlkaXNwbGF5OiBibG9jazsKCQkJCQlmbG9hdDogbGVmdDsKCQkJCQliYWNrZ3JvdW5kLWltYWdlOiB1cmwoJy8vdXBsb2FkLndpa2ltZWRpYS5vcmcvd2lraXBlZGlhL2NvbW1vbnMvOS85Ny9FcnJvcmxpbmUucG5nJyk7CgkJCQkJYmFja2dyb3VuZC1wb3NpdGlvbjogY2VudGVyIGNlbnRlcjsKCQkJCQliYWNrZ3JvdW5kLXJlcGVhdDogbm8tcmVwZWF0OwoJCQkJCWhlaWdodDogMzQwcHg7CgkJCQkJd2lkdGg6IDFweDsKCQkJCQltYXJnaW4tbGVmdDogMTBweDsKCQkJCQltYXJnaW4tcmlnaHQ6IDEwcHg7CgkJCQl9CgkJCQkjbWVzc2FnZSB7CgkJCQkJcGFkZGluZy1sZWZ0OiAxMHB4OwoJCQkJCWZsb2F0OiBsZWZ0OwoJCQkJCWRpc3BsYXk6IGJsb2NrOwoJCQkJCWhlaWdodDogMzQwcHg7CgkJCQkJd2lkdGg6IDM3MHB4OwoJCQkJfQoJCTwvc3R5bGU+Cgk8L2hlYWQ+Cgk8Ym9keT4KCQk8ZGl2IGlkPSJjZW50ZXIiPgoJCQk8ZGl2IGlkPSJtYWluIj4KCQkJCTxkaXYgaWQ9ImxvZ28iPjwvZGl2PgoJCQkJPGRpdiBpZD0iZGl2aWRlciI+PC9kaXY+CgkJCQk8ZGl2IGlkPSJtZXNzYWdlIj4KCQkJCQk8aDE+RXJyb3I8L2gxPgoJCQkJCTxoMj40MDQg4oCTIEZpbGUgbm90IGZvdW5kPC9oMj4KCQkJCQk8cD48ZW0+aHR0cHM6Ly9lbi53aWtpcGVkaWEub3JnL2Jvc2NvY29ya2VyeS9mZWlsPC9lbT48L3A+CgkJCQkJPHA+V2UgY291bGQgbm90IGZpbmQgdGhlIGFib3ZlIHBhZ2Ugb24gb3VyIHNlcnZlcnMuPC9wPgoJCQkJCTxwPjxiPkRpZCB5b3UgbWVhbjogPGEgaHJlZj0iL3dpa2kvYm9zY29jb3JrZXJ5L2ZlaWwiPi93aWtpL2Jvc2NvY29ya2VyeS9mZWlsPC9hPjwvYj48L3A+CgkJCQkJPHA+QWx0ZXJuYXRpdmVseSwgeW91IGNhbiB2aXNpdCB0aGUgPGEgaHJlZj0iLyI+TWFpbiBQYWdlPC9hPiBvciByZWFkIDxhIGhyZWY9Ii8vZW4ud2lraXBlZGlhLm9yZy93aWtpL0hUVFBfNDA0IiB0aXRsZT0iV2lraXBlZGlhOiBIVFRQIDQwNCI+bW9yZSBpbmZvcm1hdGlvbjwvYT4gYWJvdXQgdGhpcyB0eXBlIG9mIGVycm9yLjwvcD4KCQkJCQk8cCBzdHlsZT0iZm9udC1zaXplOiBzbWFsbGVyOyI+QSBwcm9qZWN0IG9mIHRoZSA8YSBocmVmPSIvL3dpa2ltZWRpYWZvdW5kYXRpb24ub3JnL3dpa2kvSG9tZSIgdGl0bGU9Ildpa2ltZWRpYUZvdW5kYXRpb24iPldpa2ltZWRpYSBGb3VuZGF0aW9uPC9hPjwvcD4KCQkJCTwvZGl2PgoJCQk8L2Rpdj4KCQk8L2Rpdj4KCTwvYm9keT4KPC9odG1sPg==
+    http_version: 
+  recorded_at: Mon, 06 Feb 2017 16:50:01 GMT
+recorded_with: VCR 3.0.3

@@ -1,14 +1,10 @@
 require 'rails_helper'
 
 RSpec.describe EventsController, type: :controller do
-  describe 'GET #index' do
+  describe 'GET #index', :vcr do
     let(:date) { '2017-1-15' }
 
     before(:each) do
-      stub_request(:any, /en.wikipedia.org/)
-        .to_return(body: File.new('spec/fixtures/files/summary.html'),
-                   status: 200)
-
       get :index, params: { date: date }
     end
 

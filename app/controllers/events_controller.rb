@@ -3,7 +3,7 @@ class EventsController < ApplicationController
 
   def index
     @day = Day.find_by(date: date.to_s)
-    @events = Event.find_by(day: @day)
+    @events = Event.on(@day)
   end
 
   private
@@ -15,7 +15,11 @@ class EventsController < ApplicationController
   end
 
   def date
-    params.fetch(:date, Date.current - 1.day).to_date
+    params.fetch(:date, latest_date).to_date
+  end
+
+  def latest_date
+    @latest_date ||= Date.current - 1.day
   end
 
   def day_before

@@ -1,0 +1,7 @@
+<%= form_tag('/', method: :get, enforce_utf8: false, id: 'search', class: 'form-inline my-2 my-lg-0', remote: true) do %>
+  <div class="input-group">
+    <span class="input-group-addon" id="addon-from">Date</span>
+    <%= text_field_tag(:date, @day.date, class: 'form-control mr-sm-2', data: { date_start_date: '2000-1-1', date_end_date: @latest_date }) %>
+  </div>
+<% end %>
+<%= button_tag('Get Events', id: 'submit', class: 'btn btn-outline-success my-2 my-sm-0') %>

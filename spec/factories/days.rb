@@ -1,6 +1,6 @@
 FactoryGirl.define do
   factory :day do
-    date { Date.new(2016, 12, 1) }
+    date { Faker::Date.between(Date.new(2000, 1, 1), Date.current) }
 
     trait :today do
       date { Date.current }

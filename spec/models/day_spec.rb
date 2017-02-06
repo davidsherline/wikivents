@@ -22,11 +22,11 @@ RSpec.describe Day, type: :model do
 
     describe 'uniqueness validation' do
       before(:each) do
-        create(:day)
+        create(:day, date: '2017-01-01')
       end
 
       context 'with a day with the same date as another record' do
-        let(:day) { build(:day) }
+        let(:day) { build(:day, date: '2017-01-01') }
 
         it 'should be invalid' do
           expect(day.valid?).to be(false)
